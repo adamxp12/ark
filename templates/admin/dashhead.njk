@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{pagename}} - Ark</title>
+  <link rel="stylesheet" href="/public/admin/css/foundation.min.css">
+  <link rel="stylesheet" href="/public/admin/css/dash.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+</head>
+
+<body>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+      <div class="dashmenu offmenu">
+        <h2 class="logo">Ark</h2>
+        <small>Logged in as {{username}},
+          <a href="/ark/logout">Signout?</a>
+        </small>
+        <hr>
+        <ul class="vertical menu ">
+          {% include "admin/dashmenu.njk" %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="row expanded nopad">
+        <div class="columns small-12 medium-shrink nopad">
+          <div class="dashmenu">
+            <h2 class="logo">Ark</h2>
+            <small>Logged in as {{username}},
+              <a href="/ark/logout">Signout?</a>
+            </small>
+            <hr>
+            <ul class="vertical menu hide-for-small-only">
+              {% include "admin/dashmenu.njk" %}
+            </ul>
+            <button type="button" class="button expanded show-for-small-only" data-toggle="offCanvas">Open Menu</button>
+          </div>
+        </div>
+        <div class="columns small-12 medium-expand nopad">
+          <div class="dashcontent">
+            <div class="pageheader">
+            <h3>{{pagename}}</h3>
+            </div>
+            
+{% if not ssl %}
+<div class="row">
+<div class="callout alert">You do not have SSL setup correctly. Ark will not display the website publicly without SSL setup and your reverse proxy configured to tell Ark we are using SSL.<br>
+This is designed on purpose. SSL is a must have for a modern website and Ark is the first CMS to enforce it. Admin users can develop the site without SSL.</div>
+</div>
+{% endif %}

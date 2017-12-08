@@ -1,0 +1,125 @@
+.dashmenu {
+    background: #3a3a3a;
+    min-height: 100vh;
+    width: 300px;
+    padding: 10px;
+    color: #fff;
+}
+.dashmenu .logo {
+    text-align: center;
+}
+
+.offmenu {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.pageheader {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 4px 0px 5px -2px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+.dashcontent {
+    background: rgba(210,210,210,1);
+    height: 100%;
+    box-shadow: inset 4px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 39.9375em) {
+    .dashmenu {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .dashcontent {
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 40em) {
+    .medium-shrink {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+}
+
+
+
+
+.login input[type="text"] {
+    background: none;
+    box-shadow: none;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px rgb(230,230,230) solid;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+.login input[type="text"]::placeholder {
+    color: #ddd;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.loginbox {
+    margin-top: 100px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 300;
+}
+h1.dark,
+h2.dark,
+h3.dark,
+h4.dark,
+h5.dark,
+h6.dark {
+    color: #344146;
+}
+
+h1.logo{
+    font-size: 5rem;
+}
+
+h2.logo{
+    font-size: 4rem;
+}
+
+.logo {
+    font-family: 'Megrim', cursive;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+    right: 0rem;
+}
+
+.accordion-menu a {
+    display: inline-block;
+}
+
+.accordion-menu a.button {
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ark CMS - Login</title>
+    <link rel="stylesheet" href="/public/admin/css/foundation.min.css">
+    <link rel="stylesheet" href="/public/admin/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="row expanded nopad login">
+      <div class="columns small-12 medium-expand nopad">
+        <div class="loginleft">
+        <h1 class="logo">Ark</h1>
+        <h4>An awesome CMS</h4><hr>
+        <p>Welcome to Ark. the CMS which makes life simple. combining simple customisability with community elements. Ark is a first and we hope you enjoy using it.</p>
+        <p>Ark is currently in ALPHA that means you might experence bugs or generally broken stuff.</p>
+        <p>Ark is open source so feel free to drop by on GitHub and help build an awesome CMS.</p>
+        <a href="#" class="button">GitHub</a>
+      </div>
+    </div>
+      <div class="columns small-12 shrink nopad">
+        <div class="loginright">
+          <h1>Login</h1>
+          <div class="loginbox">
+          <form method="POST">
+          <input type="text" name="username" placeholder="username" />
+          <input type="password" name="password" placeholder="password" />
+          <input type="hidden" name="_csrf" value="{{csrfToken}}">
+          <input type="submit" class="button secondary" value="Log in" /></form>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="/public/admin/js/vendor/jquery.js"></script>
+    <script src="/public/admin/js/vendor/what-input.js"></script>
+    <script src="/public/admin/js/vendor/foundation.min.js"></script>
+    <script src="/public/admin/js/app.js"></script>
+  </body>
+</html>
